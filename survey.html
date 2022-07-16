@@ -12,41 +12,76 @@
     <p id="description"> Thank you for taking the time to help us improve the platform
         Name</p>
     <form id="survey-form">
+      <div class = "form_control">
         <label id="name-label">Name</label>
         <input  type="text" id="name" required placeholder="Enter Your Name">
+      </div>
+      <div class = "form_control">
         <label id="email-label">Email</label>
         <input type="email" id="email" required placeholder="Enter Your email">
+      </div>
+
+      <div class = "form_control">
         <label id="number-label">Age (Optional)</label>
         <input type="number" id="number" min="0", max="100" placeholder="Age">
-        
-        <label> What is your role? </label>
+      </div>
+
+      <div class = "form_control">
+        <p> What is your role? </p>
         <select id = "dropdown">
             <option>Students</option>
             <option>Teacher </option>
             <option>Officer</option>
             <option>Others </option>
         </select>
-        <label> Are you familiar with Web Development? </label>
-        <input type ="radio" name = "name" value="sure"> <label> Definitely</label>
-        <input type ="radio" name = "name" value="maybe"> <label> Some how</label>
-        <input type ="radio" name = "name" value="no"> <label> No, I am not </label>
+      </div>
 
-        <label> What is your future career? </label>
+      <div class = "form_control">  
+        <p> Are you familiar with Web Development? </p>
+      <label for = "radio1" >
+        <input type ="radio" name = "name" id = "radio1" value="sure"> Definitely
+      </label>
+
+      <label for = "radio2">
+        <input type ="radio" name = "name" id = "radio2" value="maybe"> Some how
+      </label>
+
+      <label for = "radio3">
+        <input type ="radio" name = "name" id = "radio3" value="no"> No, I am not
+      </label>
+      </div>
+
+      <div class = "form_control">
+      <p>  What is your future career? </p>
         <select id = "dropdown">
             <option>Developer</option>
             <option> Project Manager </option>
             <option> System Analyst</option>
             <option> Not Mentioned </option>
         </select>
-        
-        <label> What programming you want learn? </label>
-        <input type ="checkbox" name = "name" value = 'python'> <label> Python</label>
-        <input type ="checkbox" name = "name" value = 'java'> <label> Java </label>
-        <input type ="checkbox" name = "name" value = 'ruby'> <label> Ruby </label>
-        <label>Additionals</label>
-        <textarea>Your comments</textarea>
+      </div>
 
-        <input type="submit" id = "submit" value="Submit"
+      <div class = "form_control">
+       <p> What programming you want learn? </p>
+       <label for = "checkbox1">
+        <input type ="checkbox" name = "name" id = "checkbox1" value = 'python'>  Python
+       </label>
+        
+      <label for "checkbox2">
+        <input type ="checkbox" name = "name" id = "checkbox2" value = 'java'> Java 
+       </label>
+            
+        <label for = "checkbox3">
+          <input type ="checkbox" name = "name" id = "checkbox3" value = 'ruby'>  Ruby
+        </label> 
+   
+        <p>Additionals</p>
+        <textarea>Your comments</textarea>
+      </div>
+      
+      <button type="submit" id = "submit" value="Submit">Submit</button>
+
+
     </form>
    
   </body>
